@@ -31,7 +31,6 @@ Zero Paddingには、主に2つのケースがあります。
 ### Half Padding
 When you want to preserve the dimension of the input, you choose a padding length such that the input size and output size are equal. This is referred to as half padding.
 入力の寸法を維持したい場合は、入力サイズと出力サイズが等しくなるようなパディング長を選択する。これをハーフパディングという。
-
 Example, Input : 
 
 <img width="700" alt="Screen Shot 2023-01-04 at 12 36 50 PM" src="https://user-images.githubusercontent.com/46320499/210501838-109233a8-37be-48e1-8cfe-02bb9f41c056.png">
@@ -40,6 +39,7 @@ Example, Input :
 In this configuration, we make sure that even boundary elements have equal representation in the output.
 この構成では、境界の要素も均等に出力されるようにします。
 
-padding_len = kernel - 1
 <img width="700" alt="Screen Shot 2023-01-04 at 4 32 16 PM" src="https://user-images.githubusercontent.com/46320499/210541386-eb48c4f2-3acb-4fc2-9d8c-bc963b17a543.png">
+
+padding_len = kernel - 1
 
