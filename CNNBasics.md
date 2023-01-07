@@ -1,3 +1,5 @@
+# Basics of Convolutional Neural etwork
+
 ## Strides
 Strides is the measure of by how many units you translate the kernel between 2 convolutions.
 In most cases, we translate the kernel by a single unit thus stride = 1.
