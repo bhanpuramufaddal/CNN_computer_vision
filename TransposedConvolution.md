@@ -1,4 +1,4 @@
-# Transposed Convolution
+# Upsampling and Transposed Convolution
 Convolution generally reduces the dimension of the image. Nut in several task sych as Imahe reconstruction, Image Segmentation or autoencoders, you need to preserve the output dimiension. This can be done in two ways:
 
 1. Perform Half-Padding to preserve dimension at every step of convolution
