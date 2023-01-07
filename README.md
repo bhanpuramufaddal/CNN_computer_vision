@@ -80,5 +80,6 @@ k: kernel size <br>
 p: paddingf length <br>
 s: stride <br>
 o: output dim <br>
-<img width="300" alt="Screen Shot 2023-01-07 at 11 27 08 PM" src="https://user-images.githubusercontent.com/46320499/211164089-0a0ccf0b-3a95-4036-b9d3-849ab21b01a3.png">
+<img width="300" alt="Screen Shot 2023-01-07 at 11 27 08 PM" src="https://user-images.githubusercontent.com/46320499/211164089-0a0ccf0b-3a95-4036-b9d3-849ab21b01a3.png"><br><br>
 
+[Transposed Convolutions](https://pages.github.com/).
