@@ -64,3 +64,5 @@ Take the maximum of all elements in the kernel. <br>
 <img width="500" alt="Screen Shot 2023-01-05 at 8 19 18 AM" src="https://user-images.githubusercontent.com/46320499/210690280-d96e1306-fdeb-4fb3-9047-2136e49be3b1.png"><br>
 
 Output values of a 3 × 3 max pooling operation on a 5 × 5 input using 1 × 1 strides.
+
+## 
