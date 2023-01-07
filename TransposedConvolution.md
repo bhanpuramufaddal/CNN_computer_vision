@@ -14,4 +14,7 @@ In Nearest Neighbors, as the name suggests we take an input pixel value and copy
 <img width="500" alt="Screen Shot 2023-01-08 at 1 28 35 AM" src="https://user-images.githubusercontent.com/46320499/211168438-a334e587-5c20-43be-984e-d427294dc981.png"><br>
 Converting 2*2 into 4*4, the spaces in the middle are file by linear interpolatrion of the values in the 2*2 matrix.
 
+## Bed of Nails
+
+
 
