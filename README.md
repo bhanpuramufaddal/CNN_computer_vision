@@ -74,4 +74,11 @@ Take the maximum of all elements in the kernel. <br>
 
 Output values of a 3 × 3 max pooling operation on a 5 × 5 input using 1 × 1 strides.
 
-## 
+## Calculating Output Dimension
+i: input dime <br>
+k: kernel size <br>
+p: paddingf length <br>
+s: stride <br>
+o: output dim <br>
+<img width="300" alt="Screen Shot 2023-01-07 at 11 27 08 PM" src="https://user-images.githubusercontent.com/46320499/211164089-0a0ccf0b-3a95-4036-b9d3-849ab21b01a3.png">
+
