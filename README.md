@@ -1,5 +1,4 @@
 # Convolutional Neural Netwqork
-
 In this document, I will explore CNN (Convolutional Neural Network) primarily in the context of Computer Vision.
 Below is an intuitive explanation of how CNNs work.<br>
 この文書では、主にコンピュータビジョンの文脈でCNN（Convolutional Neural Network）を探求していきます。
