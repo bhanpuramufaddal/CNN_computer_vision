@@ -41,12 +41,25 @@ S = [a1,a2 ...] ここで a1 = {idx1, idx2 ...}, idx : 最大値のインデッ�
 The simplest way to think about a transposed convolution on a given input is
 to imagine such an input as being the result of a direct convolution applied on
 some initial feature map. The trasposed convolution can be then considered as
-the operation that allows to recover the shape 3 of this initial feature map.
+the operation that allows to recover the shape of this initial feature map.
+
+与えられた入力に対する転置畳み込みについて考える最も簡単な方法は次のとおりです。
+適用された直接畳み込みの出力などの操作の入力を想像する
+いくつかの初期機能マップ。転置畳み込みは、次のように考えることができます。
+この初期の特徴マップの形状を復元できる操作。
+
+The major difference between transposed and previous techniques is that in transposed convolution, the kernel is learned and can be improved with training. This will give better results.
+転置された手法と以前の手法の主な違いは、転置畳み込みではカーネルが学習され、トレーニングによって改善できることです。これにより、より良い結果が得られます。
 
 Let’s consider the convolution of a 3×3 kernel on a 4×4 input with unitary
 stride and no padding (i.e., i = 4, k = 3, s = 1 and p = 0). As depicted in
 Figure 2.1, this produces a 2 × 2 output. The transpose of this convolution will
 then have an output of shape 4 × 4 when applied on a 2 × 2 input.
+
+4×4入力の3×3カーネルの畳み込みを、ユニタリーストライドとパディング無しで考えてみよう。
+パディングなし（すなわち、i = 4, k = 3, s = 1, p = 0）。図2.1に示すように
+図2.1に描かれているように、これは2×2の出力を生成する。この畳み込みの転置は
+この畳み込みの転置は、2×2の入力に適用すると、4×4の形状の出力となる。
 
 ### Algorithm
 | Convolution Type | Operation | Zero inserted (z) | Padding | Stride | Output Size
@@ -59,6 +72,11 @@ then have an output of shape 4 × 4 when applied on a 2 × 2 input.
 3. Pad the modified input image with p’ number of zeros
 4. Carry out standard convolution on the image generated from step 3 with a stride length of 1
 
+<br>
+1. 新しいパラメータzとp'を計算する。
+2. 入力の各行と各列の間に、z 個の 0 を挿入する。これにより、入力のサイズは (2*i-1)x(2*i-1) に増加する。
+3. 修正された入力画像に p' 個のゼロを詰める。
+4. ステップ 3 で生成された画像に対して，ストライド長 1 で標準的な畳み込みを行う。
 ![image](https://user-images.githubusercontent.com/46320499/211265002-9ddbb0f2-0eeb-48f7-be2d-2309e3ab8d53.png)
 
 
