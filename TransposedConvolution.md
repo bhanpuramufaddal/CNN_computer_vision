@@ -20,13 +20,21 @@ In Nearest Neighbours, as the name suggests we take an input pixel value and cop
 
 ## Bi-Linear Interpolation
 <img width="500" alt="Screen Shot 2023-01-08 at 1 28 35 AM" src="https://user-images.githubusercontent.com/46320499/211168438-a334e587-5c20-43be-984e-d427294dc981.png"><br>
-Converting 2*2 into 4*4, the spaces in the middle are file by linear interpolatrion of the values in the 2*2 matrix.
+Converting 2*2 into 4*4, the spaces in the middle are file by linear interpolation of the values in the 2*2 matrix.<br>
+2*2を4*4に変換し、真ん中のスペースは2*2マトリックスの値を線形補間してファイル化したものです。
 
 ## Max-Unpooling
 1. For every max-pooling layer in the encoding step, make note of all the index of these max values. Let's call this list of set of max value indices <br>
 S = [a1,a2 ...] where a1 = {idx1, idx2 ...}, idx : index of max values
 2. Then while upsampling fill output matrix with zeros.
 3. Now at every index of the max values in S, replace these the values at this index with values from previous layer.
+<br>
+
+1. エンコードステップにおけるすべてのマックスプーリングレイヤーについて、これらのマックスバリューのすべてのインデックスをメモしておく。この最大値インデックスのセットをリストと呼ぶことにする <br>
+S = [a1,a2 ...] ここで a1 = {idx1, idx2 ...}, idx : 最大値のインデックス
+2. 次に、アップサンプリング中に出力行列をゼロで埋めます。
+3. ここで、S の最大値のインデックスごとに、このインデックスの値を前の層の値で置き換えます。
+
 <img width="800" alt="Screen Shot 2023-01-08 at 2 12 48 PM" src="https://user-images.githubusercontent.com/46320499/211187682-6d5bd945-5101-49d0-a138-df42bf6e609e.png">
 
 ## Transpose Convolution
