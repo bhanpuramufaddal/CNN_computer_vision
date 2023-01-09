@@ -12,7 +12,7 @@ Yann LeCunら（1989）は、手書きの数字の画像から直接コンボリ
 Wei Zhangら（1988）は、アルファベット認識用CNNの畳み込みカーネルをバックプロパゲーションで学習させた。このモデルは、後にCNNという名前が1990年代初頭に作られる以前は、シフト不変人工ニューラルネットワーク（SIANN）と呼ばれていた。Wei Zhangらは、最後の完全連結層を持たない同じCNNを、医療画像の物体分割(1991)やマンモグラムの乳がん検出(1994)にも適用している。
 この手法は、現代のコンピュータビジョンの基礎となった。
 
-<img width="1000" alt="Screen Shot 2023-01-09 at 12 05 33 PM" src="https://user-images.githubusercontent.com/46320499/211252269-22134ce3-6ffd-4e89-9d02-44ceb5e28ef1.png">
+![1_YvlCSNzDEBGEWkZWNffPvw](https://user-images.githubusercontent.com/46320499/211258421-5f98f206-95b5-4bd3-a8bc-3bb7b460ab26.gif)
 
 
 > ## [Basics of CNN](CNNBasics.md)<br>
