@@ -30,7 +30,27 @@ S = [a1,a2 ...] where a1 = {idx1, idx2 ...}, idx : index of max values
 <img width="800" alt="Screen Shot 2023-01-08 at 2 12 48 PM" src="https://user-images.githubusercontent.com/46320499/211187682-6d5bd945-5101-49d0-a138-df42bf6e609e.png">
 
 ## Transpose Convolution
+The simplest way to think about a transposed convolution on a given input is
+to imagine such an input as being the result of a direct convolution applied on
+some initial feature map. The trasposed convolution can be then considered as
+the operation that allows to recover the shape 3 of this initial feature map.
 
+Let’s consider the convolution of a 3×3 kernel on a 4×4 input with unitary
+stride and no padding (i.e., i = 4, k = 3, s = 1 and p = 0). As depicted in
+Figure 2.1, this produces a 2 × 2 output. The transpose of this convolution will
+then have an output of shape 4 × 4 when applied on a 2 × 2 input.
 
+### Algorithm
+| Convolution Type | Operation | Zero inserted (z) | Padding | Stride | Output Size
+| --- | --- | --- | --- | --- | --- | 
+| Standard | Downsampling | z = 0 | p | s | (i + 2*p - k)/s + 1 |
+| Transposed | Upsampling | z = s - 1 | p` = k - p - 1| s` = 1 | o` = (i - 1)*s + k - 2*p |
+
+1. Calculate new parameters z and p’
+2. Between each row and columns of the input, insert z number of zeros. This increases the size of the input to (2*i-1)x(2*i-1)
+3. Pad the modified input image with p’ number of zeros
+4. Carry out standard convolution on the image generated from step 3 with a stride length of 1
+
+![image](https://user-images.githubusercontent.com/46320499/211265002-9ddbb0f2-0eeb-48f7-be2d-2309e3ab8d53.png)
 
 
