@@ -77,6 +77,7 @@ then have an output of shape 4 × 4 when applied on a 2 × 2 input.
 2. 入力の各行と各列の間に、z 個の 0 を挿入する。これにより、入力のサイズは (2*i-1)x(2*i-1) に増加する。
 3. 修正された入力画像に p' 個のゼロを詰める。
 4. ステップ 3 で生成された画像に対して，ストライド長 1 で標準的な畳み込みを行う。
-![image](https://user-images.githubusercontent.com/46320499/211265002-9ddbb0f2-0eeb-48f7-be2d-2309e3ab8d53.png)
+<br>
+<img width="1000" alt="Screen Shot 2023-01-09 at 4 00 43 PM" src="https://user-images.githubusercontent.com/46320499/211288074-8cbc281a-060d-41b9-abe6-4eada22ca75d.png">
 
 
