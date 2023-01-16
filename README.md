@@ -17,6 +17,7 @@ Wei Zhangら（1988）は、アルファベット認識用CNNの畳み込みカ�
 ![1_YvlCSNzDEBGEWkZWNffPvw](https://user-images.githubusercontent.com/46320499/211258421-5f98f206-95b5-4bd3-a8bc-3bb7b460ab26.gif)
 
 > ## [Basics of CNN](CNNBasics.md)<br>
+> ## [Pooling](Pooling.md)<br>
 > ## [Upsampling and Transposed Convolutions](TransposedConvolution.md)<br>
 > ## [Bibliography](Bibliography.md)<br>
 
