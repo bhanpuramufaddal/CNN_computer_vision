@@ -21,5 +21,6 @@ Wei Zhangら（1988）は、アルファベット認識用CNNの畳み込みカ�
 > ## [Multiple Input and Output Channels](MultipleChannels.md)<br>
 > ## [Upsampling and Transposed Convolutions](TransposedConvolution.md)<br>
 > ## [LeNet](LeNet.md)<br>
+> ## [AlexNet](AlexNet.md)<br>
 > ## [Bibliography](Bibliography.md)<br>
 
