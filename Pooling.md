@@ -1,15 +1,8 @@
 ## Pooling
-Pooling is similar to discrete convolutions except that instead element-wise multiplication with the kernel, a different operation is performed called the pooling function. The primary motivation for this is dimensional reduction.
+Pooling is similar to discrete convolutions except that instead element-wise multiplication with the kernel, a different operation is performed called the pooling function. The primary motivation for this is dimensional reduction. It is analogous to a non-linear activation function like Sigmoid or ReLU in fully connected network. There are 2 popular pooling operations, Average Pooling and Max Pooling.<br>
 
-It is analogous to a non-linear activation function like Sigmoid or ReLU in fully connected network.
-
-There are 2 popular pooling operations, Average Pooling and Max Pooling.<br>
 プーリングは離散畳み込みと似ているが、カーネルとの要素ごとの乗算の代わりに、プーリング関数という別の演算が行われる。その主な動機は次元の削減である。
-プーリングには、
-
-これは、完全連結ネットワークにおけるシグモイドやReLUのような非線形活性化関数に類似している。
-
-Average Pooling と Max Pooling の2つがある。
+プーリングには、これは、完全連結ネットワークにおけるシグモイドやReLUのような非線形活性化関数に類似している。Average Pooling と Max Pooling の2つがある。
 
 ### Average Pooling
 Take an average of all elements in the kernel. <br>
