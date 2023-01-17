@@ -24,4 +24,7 @@ def vgg_block(num_convs, out_channels):
 Similar to AlexNet or LeNet, VGG also has Convolutional Layers in the beginning accompanied with A Fully Connected Layer at the end.
 But instead of Single CNN Layers, we have VGG Blocks.
 
+AlexNetやLeNetと同様に、VGGも最初に畳み込み層があり、最後に完全連結層があります。
+しかし、単一のCNN層ではなく、VGGブロックがあります。
+
 <img width="400" alt="Screen Shot 2023-01-17 at 10 57 27 AM" src="https://user-images.githubusercontent.com/46320499/212817106-50caf9a5-13bf-41d1-b74f-5615021e4474.png">
