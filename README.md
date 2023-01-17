@@ -1,4 +1,4 @@
-# Convolutional Neural Netwqork
+# Convolutional Neural Networks
 In this document, I will explore CNN (Convolutional Neural Network) primarily in the context of Computer Vision.
 Below is an intuitive explanation of how CNNs work.<br>
 この文書では、主にコンピュータビジョンの文脈でCNN（Convolutional Neural Network）を探求していきます。
@@ -22,5 +22,6 @@ Wei Zhangら（1988）は、アルファベット認識用CNNの畳み込みカ�
 > ## [Upsampling and Transposed Convolutions](TransposedConvolution.md)<br>
 > ## [LeNet](LeNet.md)<br>
 > ## [AlexNet](AlexNet.md)<br>
+> ## [VGG Networks](VGGNet.md)<br>
 > ## [Bibliography](Bibliography.md)<br>
 
